@@ -30,7 +30,7 @@
     </section>
     <section id="contact">
         <h2>Contact Us</h2>
-        <p>Email: your.email@example.com | Phone: (123) 456-7890</p>
+        <p>Email: sbkruses@gmail.com | Phone: 805 689 4923</p>
         <form>
             <input type="text" placeholder="Your Name" required><br>
             <input type="email" placeholder="Your Email" required><br>
