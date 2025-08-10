@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaberDome - About</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>SaberDome</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="calculator.html">Deal Calculator</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About SaberDome</h2>
+            <p>SaberDome is your trusted partner for finding the best deals and services. Our mission is to help you save money and make informed decisions. Founded in 2025, we aim to deliver value and convenience to our customers.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 SaberDome. All rights reserved.</p>
+    </footer>
+</body>
+</html>
