@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaberDome - Deal Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>SaberDome</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="calculator.html" class="active">Deal Calculator</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="calculator">
+            <h2>Deal Calculator</h2>
+            <p>Enter the original price and discount percentage to find your final price.</p>
+            <div class="calculator-form">
+                <label for="price">Original Price ($):</label>
+                <input type="number" id="price" placeholder="e.g., 100" required>
+                <label for="discount">Discount (%):</label>
+                <input type="number" id="discount" placeholder="e.g., 20" required>
+                <button onclick="calculateDeal()">Calculate</button>
+                <p id="result"></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 SaberDome. All rights reserved.</p>
+    </footer>
+    <script>
+        function calculateDeal() {
+            const price = parseFloat(document.getElementById('price').value);
+            const discount = parseFloat(document.getElementById('discount').value);
+            if (isNaN(price) || isNaN(discount)) {
+                document.getElementById('result').innerText = 'Please enter valid numbers.';
+                return;
+            }
+            if (discount < 0 || discount > 100) {
+                document.getElementById('result').innerText = 'Discount must be between 0 and 100%.';
+                return;
+            }
+            const discountAmount = price * (discount / 100);
+            const finalPrice = price - discountAmount;
+            document.getElementById('result').innerText = `Final Price: $${finalPrice.toFixed(2)} (You save $${discountAmount.toFixed(2)}!)`;
+        }
+    </script>
+</body>
+</html>
